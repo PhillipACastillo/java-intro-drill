@@ -22,7 +22,7 @@ public class Playlist {
         for (Song song : songs) {
             songTitles.add(song.title);
         }
-        return songTitles.toArray(new String[0]);
+        return songTitles.toArray(new String[songs.size()]);
     }
 
     public int totalDuration() {
